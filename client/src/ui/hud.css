@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  background: #10151a;
+  color: #e8ecef;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 24px;
+}
+.hud-bar {
+  width: 640px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1b232b;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin-top: 12px;
+  box-sizing: border-box;
+}
+.hud-player {
+  font-weight: 600;
+  opacity: 0.55;
+}
+.hud-player.active {
+  opacity: 1;
+  color: #ffd166;
+}
+.hud-player .group {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+.hud-status {
+  text-align: center;
+  flex: 1;
+}
+.foul {
+  color: #ff5d5d;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.power-meter {
+  width: 640px;
+  height: 10px;
+  background: #1b232b;
+  border-radius: 6px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+.power-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50, #ffca28, #ef5350);
+  transition: width 0.05s linear;
+}
